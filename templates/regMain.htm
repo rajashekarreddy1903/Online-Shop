@@ -1,0 +1,54 @@
+<div ng-controller="registerController">
+	<h1 style="text-align: center; color: green;"><input type="button" value="Registration" id="modal"></input></h1>
+	<div class="rigisterFOrm">
+	<form novalidate method="POST" name ="myform">
+		<div class="form-inline">
+			<label>FirstName</label>
+			<input type="text" name="firstName" id="input1" class="form-control" ng-model="fName" placeholder="enter first name" required>
+			<div class="errMsg" ng-show="myform.firstName.$touched && myform.firstName.$invalid">
+							* firstName is mandatory
+			</div>
+			
+			<input type="text" name="lastName" id="input2" class="form-control" ng-model="lName" placeholder="enter last name" required>
+			<label>LastName</label>
+			<div class="errMsg" style="left: 700px;" ng-show="myform.lastName.$touched && myform.lastName.$invalid">
+							* lastName is mandatory
+			</div>
+		</div><br>
+		<div class="form-inline">
+			<label>Mobile No</label>
+			<input type="number" name="mobile" id="input1" class="form-control" ng-model="mobile" placeholder="mobile Number" required>
+			<div class="errMsg" ng-show="myform.mobile.$touched && myform.mobile.$invalid">
+							* enter mobile number
+			</div>
+			
+			<input type="email" name="email" id="input2" class="form-control" ng-model="email" placeholder="Ente ur Mail" required>
+			<label>&nbsp;&nbsp;&nbsp;&nbsp;Email </label>
+			<div class="errMsg" style="left: 700px;" ng-show="myform.email.$touched && myform.email.$invalid">
+							* user mail is invalid
+			</div>
+		</div><br>
+		<div class="form-inline">
+			<label>&nbsp;Password</label>
+			<input type="password" name="Password" id="input1" class="form-control" ng-model="Password" placeholder="enter 6 digit password" required>
+			<div class="errMsg" ng-show="myform.Password.$touched && myform.Password.$invalid">
+							* password mandatory
+			</div>
+			
+			<input type="password" name="RePw" id="input2" class="form-control" ng-model="rePw" placeholder="Re enter password" required>
+			<label>&nbsp;&nbsp;ReEnter</label>
+			<div class="errMsg" style="left: 700px;" ng-show="myform.RePw.$touched && myform.RePw.$invalid">
+							* re enter password
+			</div>
+			<div class="errMsg1">
+							* password mathed
+			</div>
+			<div class="errMsg2">
+							* password not matched
+			</div>
+		</div>
+		<div id="buttn1"><input type="Submit" name="buttn" class="btn btn-primary" value="Submit" ng-disabled="myform.$invalid" ng-click=validate();></div>
+		<div id="buttn2"><input type="reset" name="buttn" class="btn btn-warning" value="Reset"></div>
+	</form>
+	</div>
+</div>

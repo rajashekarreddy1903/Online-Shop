@@ -1,0 +1,120 @@
+#footer{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	background: #222;
+	height: 45px;
+	position: fixed;
+}
+#header{
+	height: 75px;
+	background: #222;
+
+}
+.title{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	color: #fff;
+	padding-top: 20px;
+}
+.CopyRights{
+	text-align: center;
+	color: red;
+	padding-top: 10px;
+}
+.mainContent{
+	background: #ccc;
+	border: 1px solid black;
+	
+	width: 100%;
+	position: absolute;
+	top: 75px;
+	bottom: 45px;
+}
+.login{
+	width: 400px;
+	height: 200px;
+	border: 2px solid yellow;
+	margin: 20px auto;
+	background: hotpink;
+	border-radius: 3px;
+}
+.inputPosition{
+	text-align: center;
+	margin-top: 25px;
+}
+.Uid{
+	position: relative;
+	left: 12px;
+}
+#buttn{
+	position: relative;
+	left: 30px;
+	top: 20px;
+}
+.reg{
+	color: green;
+	font-size: 18px;
+	position: relative;
+	left: 250px;
+	bottom: 25px;
+	cursor: pointer;
+}
+.frgt{
+	color: green;
+	font-size: 18px;
+	position: relative;
+	left: 250px;
+	bottom: 35px;
+	cursor: pointer;
+}
+.rigisterFOrm{
+	border: 1px solid #222;
+	width: 600px;
+	height: 300px;
+	margin: 10px auto;
+	border-radius: 6px;
+	background: whitesmoke;
+	padding: 30px 20px 20px 30px;
+	display: none;
+}
+#input1,#input2{
+	width: 180px;
+	
+}
+#buttn1{
+	position: relative;
+	left: 170px;
+	top: 30px;
+}
+.change{
+	background: lightgreen;
+}
+#buttn2{
+	position: relative;
+	left: 280px;
+	bottom: 4px;
+}
+.errMsg{
+	color: red;
+	font-size: 10px;
+	position: absolute;
+	left: 520px;
+}
+.errMsg1{
+	color: green;
+	font-size: 10px;
+	position: absolute;
+	left: 630px;
+	top: 254px;
+	display: none;
+}
+.errMsg2{
+	color: red;
+	font-size: 10px;
+	position: absolute;
+	left: 630px;
+	top: 254px;
+	display: none;
+}

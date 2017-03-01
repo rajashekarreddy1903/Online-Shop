@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Creating simple task</title>
+		<link rel="icon" href="images/logo.PNG">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="js/angular.js"></script>
+		<script type="text/javascript" src="js/route.js"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/myapp.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	</head>
+	<body ng-app="mySampleApp" ng-controller="mySampleController">
+		<div ng-include="'templates/header.htm'"></div>
+
+			<main class="mainContent" ng-view>
+				<h1 style="text-align: center;">Master Page</h1>
+				<div class="login">
+					<div class="inputPosition"><span>User Id :</span><input type="text" class="Uid" placeholder="enter user name"></div>
+					<div class="inputPosition"><span>Pass Word :</span><input type="password" class="Upw" placeholder="enter password"></div>
+					<input type="button" id="buttn" class="btn btn-info" value="Login">
+					<P class="reg" ng-click="redirect('registration')">Register</P>
+					<p class="frgt" ng-click="redirect('forgot')">Forgot</p>
+				</div>
+			</main>
+		<div ng-include="'templates/footer.htm'"></div>	
+		
+	</body>
+</html>
